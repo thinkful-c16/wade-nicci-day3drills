@@ -20,8 +20,8 @@ const studentData = [
   
 function enrollInSummerSchool(students) {
 
-  students.forEach(function(key){
-    key.status = 'In Summer school';    
+  students.forEach(function(student){
+    student.status = 'In Summer school';  
   });
   return students;
 }
