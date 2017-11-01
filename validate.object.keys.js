@@ -29,13 +29,13 @@ function validateKeys(object, expectedKeys) {
 
   for (let i = 0; i < expectedKeys.length; i++) {
     for (let key in object) {
-        if (!key === expectedKeys[i]) {
-            return false;
-        }
+      if (!key === expectedKeys[i]) {
+        return false;
+      }
     }
 
     return true;
-
+  }
 }
   
   
@@ -78,7 +78,7 @@ function testIt() {
   if (typeof validateKeys(objectA, expectedKeys) !== 'boolean') {
     console.error(
       'FAILURE: `validateKeys` should return a boolean value');
-testIt();    return;
+    testIt();    return;
   }
   
   
